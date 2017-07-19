@@ -4,6 +4,8 @@
 
 - Open,Save,Delete,Create (CRUD)
 
+### A few examples:
+
 ```swift
 FileModifier.write("~/Desktop/temp.txt".tildePath, "test")
 FileAsserter.exists("~/Desktop/temp.txt".tildePath)//Output: true
