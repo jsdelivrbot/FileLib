@@ -2,6 +2,7 @@ import Foundation
 class FilePathParser {
     /**
      * Returns the path to where you can save your app's files. Here it is:
+     * Output: /Users/James/Documents
      */
     static func appDocPath()->String{
         let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
@@ -53,6 +54,7 @@ class FilePathParser {
     /**
      * Returns the project resource folder
      * NOTE: https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSBundle_Class/
+     * Example: Swift.print(FileParser.content(FilePathParser.resourcePath() + "/temp.bundle/test.txt"))
      */
     static func resourcePath()->String{
         return Bundle.main.resourcePath!

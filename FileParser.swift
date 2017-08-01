@@ -15,18 +15,18 @@ class FileParser{
             let content = try String(contentsOfFile:path, encoding:String.Encoding.utf8) as String//encoding: NSUTF8StringEncoding
             return content
         } catch {
-            //Swift.print("Could not load: " + "\(path)")// contents could not be loaded
             return nil
         }
 	}
     /**
-     * resourceContent("example","txt")
+     * FileParser.resourceContent("example","txt")
+     * Example: Swift.print(FileParser.content(FilePathParser.resourcePath() + "/temp.bundle/test.txt"))
      */
     static func resourceContent(_ fileName:String, _ fileExtension:String)->String?{
         if let filepath = Bundle.main.path(forResource: fileName, ofType:fileExtension ) {
             return content(filepath)
         } else {
-            return ""// example.txt not found!
+            return nil// example.txt not found!
         }
     }
     /**
