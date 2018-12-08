@@ -1,6 +1,6 @@
 # **FileLib** 
 
-<img width="100" alt="img" src="https://rawgit.com/stylekit/img/master/FileLib.svg">
+<img width="100" alt="img" src="https://cdn.jsdelivr.net/gh/stylekit/img/FileLib.svg">
 
 - Open,Save,Delete,Create (CRUD)
 
